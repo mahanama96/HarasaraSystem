@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BMS_harasara;
+using Tulpep.NotificationWindow;
+using HarasaraSystem.SubInterface.Transport;
 
 namespace Transport
 {
@@ -19,6 +21,8 @@ namespace Transport
             InitializeComponent();
             timer1.Start();
             label7.Text = user;
+            CrystalReportTrans at = new CrystalReportTrans();
+            crystalReportViewer1.ReportSource = at;
         }
 
         private void bunifuImageButton3_Click(object sender, EventArgs e)
@@ -81,32 +85,13 @@ namespace Transport
             printDocument1.Print();
         }
 
-        private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        
+        private void bunifuThinButton1_Click(object sender, EventArgs e)
         {
-            Bitmap bm = new Bitmap(this.dataGridView1.Width, this.dataGridView1.Height);
-            dataGridView1.DrawToBitmap(bm, new Rectangle(0, 0, this.dataGridView1.Width, this.dataGridView1.Height));
-            e.Graphics.DrawImage(bm, 10, 10);
-        }
-
-        private void bunifuFlatButton1_Click(object sender, EventArgs e)
-        {
-
-            if ((string)comboBox1.SelectedItem == "Vehicle repair")
-            {
-                DataTable dt = new DataTable();
-                dbconnect db = new dbconnect();
-
-                dt = db.ReadValue("Select * From vehiclerepair where SubmittedDate between '" + dateTimePicker1.Text + "' and '" + dateTimePicker2.Text + "'");
-                dataGridView1.DataSource = dt;
-            }
-            else if ((string)comboBox1.SelectedItem == "Driver details")
-            {
-                DataTable dt = new DataTable();
-                dbconnect db = new dbconnect();
-
-                dt = db.ReadValue("Select * From driverdetails where DOB between '" + dateTimePicker1.Text + "' and '" + dateTimePicker2.Text + "'");
-                dataGridView1.DataSource = dt;
-            }  
+            PopupNotifier popup = new PopupNotifier();
+            popup.TitleText = "Help";
+            popup.ContentText = "You can access to each of these subsections.\n To access please press the interface buttons";
+            popup.Popup();
         }
     }
 }

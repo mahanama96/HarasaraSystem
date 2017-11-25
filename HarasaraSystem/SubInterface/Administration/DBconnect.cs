@@ -94,6 +94,7 @@ namespace HarasaraSystem.SubInterface.Administration
             }
             catch (Exception e1)
             {
+                
                 con.Close();
                 return "";
             }

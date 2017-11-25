@@ -22,7 +22,26 @@ namespace Transport
             label7.Text = user;
 
         }
+        MySqlConnection connnection = new MySqlConnection("server=localhost;user id=root;database=harasara");
+        void update()
+        { 
+        
+        //delete from table
+                    MySqlConnection con = new MySqlConnection("server=localhost;user id=root;database=harasara");
+
+                    String update = "UPDATE vehicles SET Availability = 'Yes' WHERE VehicleID = '" + this.textBox1.Text + "' ";
+                    MySqlCommand command = new MySqlCommand(update, connnection);
+                    MySqlCommand cmnd = new MySqlCommand(update, con);
+                                      
+                    MySqlDataReader myreader;
+                    con.Open();
+                    myreader = cmnd.ExecuteReader();
+                    
+        
+        
+        }
        
+        
             void fillcombo()
         { 
         
@@ -61,8 +80,8 @@ namespace Transport
                 }
 
             }
-        
-                  
+
+            
         private void bunifuThinButton4_Click(object sender, EventArgs e)
         {
             /*this.Hide();
@@ -154,20 +173,24 @@ namespace Transport
                 {
 
                     MySqlConnection connnection = new MySqlConnection("server=localhost;user id=root;database=harasara");
-                    String insert = "INSERT INTO vehiclerepair(VehicleID, SubmittedDate,Estimation, DueDate,Notes) VALUES ('" + this.textBox1 + "' '" + this.dateTimePicker1.Text + "' '" + this.bunifuCustomTextbox5.Text + "' '" + this.dateTimePicker2.Text + "''" + this.bunifuCustomTextbox2.Text + "')";
+                    String insert = "INSERT INTO vehiclerepair(VehicleID, SubmittedDate,Estimation, DueDate,Notes) VALUES ('" + this.textBox1.Text + "', '" + this.dateTimePicker1.Text.ToString() + "', '" + this.bunifuCustomTextbox5.Text + "', '" + this.dateTimePicker2.Text.ToString() + "', '" + this.bunifuCustomTextbox2.Text + "')";
                     String update = "UPDATE vehicles SET Availability = 'No' WHERE VehicleID = '"+this.textBox1.Text+"'";
                     MySqlCommand command = new MySqlCommand(insert, connnection);
-                    MySqlCommand command2 = new MySqlCommand(update, connnection);
+                  //  MySqlCommand command2 = new MySqlCommand(update, connnection);
                     MySqlConnection con = new MySqlConnection("server=localhost;user id=root;database=harasara");
                     MySqlCommand cmnd = new MySqlCommand(insert, con);
-                    MySqlCommand cmnd2 = new MySqlCommand(update, con);
+                   // MySqlCommand cmnd2 = new MySqlCommand(update, con);
 
                     MySqlDataReader myreader;
                     con.Open();
                     myreader = cmnd.ExecuteReader();
-                    myreader = cmnd2.ExecuteReader();
-                    MessageBox.Show("Saved");
+                   
+                    //MessageBox.Show("Saved");
                     con.Close();
+
+                    BMS_harasara.dbconnect conn = new BMS_harasara.dbconnect();
+                    conn.ExQuery(update);
+                    MessageBox.Show("Updated");
 
                 }
 
@@ -212,15 +235,31 @@ namespace Transport
             {
                 if (this.dataGridView1.SelectedRows.Count > 0)
                 {
-                    //insert into table
-                    String delete = "DELETE FROM vehiclerepair WHERE vehicleID = '" + this.dataGridView1.SelectedRows[0] + "'";
-                    MySqlCommand command = new MySqlCommand(delete, connnection);
+                    
                     MySqlConnection con = new MySqlConnection("server=localhost;user id=root;database=harasara");
+                   
+                    String delete = "DELETE FROM vehiclerepair WHERE vehicleID = '" + this.textBox1.Text + "'";
+                    String update = "UPDATE vehicles SET Availability = 'Yes' WHERE VehicleID = '" + this.textBox1.Text + "'";
+
+                    /*MySqlCommand command = new MySqlCommand(delete, connnection);
                     MySqlCommand cmnd = new MySqlCommand(delete, con);
+                   
+                   
                     MySqlDataReader myreader;
                     con.Open();
                     myreader = cmnd.ExecuteReader();
-                    MessageBox.Show("Deleted Successfully", "Success", MessageBoxButtons.OK);
+                    update();*/
+                    try
+                    {
+                        BMS_harasara.dbconnect conn = new BMS_harasara.dbconnect();
+                        conn.ExQuery(delete);
+                        conn.ExQuery(update);
+                        MessageBox.Show("Deleted Successfully", "Success", MessageBoxButtons.OK);
+                    }
+                    catch(Exception ex)
+                    {
+                        MessageBox.Show(ex.Message, "Database error");
+                    }
                 }
 
                 else
@@ -266,7 +305,51 @@ namespace Transport
 
         private void bunifuThinButton9_Click(object sender, EventArgs e)
         {
+            
 
+            if (String.IsNullOrEmpty(bunifuCustomTextbox5.Text))
+            {
+                String error = "Enter Estimation";
+                label6.Text = error.ToString();
+                //MessageBox.Show("Enter Driver Name.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else if (String.IsNullOrEmpty(bunifuCustomTextbox2.Text))
+            {
+                String error = "Enter Contact Number";
+                label8.Text = error.ToString();
+                //MessageBox.Show("Enter Contact Number.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            
+            
+            else
+            {
+
+                MySqlConnection con = new MySqlConnection("server=localhost;user id=root;database=harasara");
+
+                try
+                {
+                    //update table
+
+                    String update = "UPDATE vehiclerepair SET SubmittedDate = '" + this.dateTimePicker1.Text + "', Estimation = '" + this.bunifuCustomTextbox5.Text + "', DueDate = '" + this.dateTimePicker2.Text + "', Notes ='" + this.bunifuCustomTextbox2.Text + "' WHERE vehicleID = '" + this.textBox1.Text + "'";
+                    
+                    MySqlCommand cmnd = new MySqlCommand(update, con);
+                    MySqlDataReader myreader;
+                    con.Open();
+                    myreader = cmnd.ExecuteReader();
+                    MessageBox.Show("Updated Successfully", "Success", MessageBoxButtons.OK);
+
+
+
+                }
+
+                catch (Exception ex)
+                {
+
+                    MessageBox.Show(ex.Message, "Error");
+
+
+                }
+            }
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -278,7 +361,7 @@ namespace Transport
         {
             char ch = e.KeyChar;
 
-            if (char.IsLetterOrDigit(ch))
+            if (!char.IsDigit(ch))
             {
 
                 e.Handled = true;
@@ -298,6 +381,19 @@ namespace Transport
             lblTime.Text = DateTime.Now.ToString("HH:mm");
             lblSecond.Text = DateTime.Now.ToString("ss");
             lblDate.Text = DateTime.Now.ToString("MMM dd yyyy");
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dataGridView1.Rows.Count > -1)
+            {
+                textBox1.Text = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
+                dateTimePicker1.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
+                bunifuCustomTextbox5.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
+                dateTimePicker2.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
+                bunifuCustomTextbox2.Text = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
+                
+            }
         }
     }
 }

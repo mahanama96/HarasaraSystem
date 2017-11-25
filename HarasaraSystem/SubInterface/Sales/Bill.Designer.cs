@@ -56,12 +56,14 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BillProducts)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -315,6 +317,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.panel2.Controls.Add(this.bunifuImageButton1);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
@@ -373,6 +376,20 @@
             this.label6.TabIndex = 12;
             this.label6.Text = "*";
             // 
+            // bunifuImageButton1
+            // 
+            this.bunifuImageButton1.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.bunifuImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.Image")));
+            this.bunifuImageButton1.ImageActive = null;
+            this.bunifuImageButton1.Location = new System.Drawing.Point(666, 0);
+            this.bunifuImageButton1.Name = "bunifuImageButton1";
+            this.bunifuImageButton1.Size = new System.Drawing.Size(39, 34);
+            this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuImageButton1.TabIndex = 1;
+            this.bunifuImageButton1.TabStop = false;
+            this.bunifuImageButton1.Zoom = 10;
+            this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
+            // 
             // Bill
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -408,6 +425,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -442,5 +460,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
+        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
     }
 }

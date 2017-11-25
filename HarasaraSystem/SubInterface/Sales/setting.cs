@@ -64,16 +64,28 @@ namespace HarasaraSystem.SubInterface.Sales
 
         private void button4_Click(object sender, EventArgs e)
         {
-            CustomMsgBox.Show("  Completed ", "OK");
+            string query = "select count(*) from supplier";
 
-            textBox6.Text = null;
-            textBox1.Text = null;
-            textBox2.Text = null;
-            richTextBox2.Text = null;
-            comboBox1.Text = null;
-            comboBox2.Text = null;
-            textBox7.Text = null;
-            label10.Text = "XXXXXXX";
+            databaseAccess d1 = new databaseAccess();
+
+            if (1 != (d1.getValue(query)))
+            {
+
+                string query2="INSERT INTO supplier(SupID,supplierName, contactNumber, Address, Bank,AccountNumber) VALUES ('"+textBox6.Text+"','"+textBox1.Text+"','"+Convert.ToInt32(textBox2.Text)+"','"+richTextBox2.Text+"','"+comboBox2.Text+"','"+textBox7.Text+"')";
+                d1.InsertData(query2);
+
+                CustomMsgBox.Show("  Completed ", "OK");
+
+                textBox6.Text = null;
+                textBox1.Text = null;
+                textBox2.Text = null;
+                richTextBox2.Text = null;
+                comboBox1.Text = null;
+                comboBox2.Text = null;
+                textBox7.Text = null;
+                label10.Text = "XXXXXXX";
+            }
+
         }
 
         private void textBox6_KeyPress(object sender, KeyPressEventArgs e)
@@ -155,10 +167,13 @@ namespace HarasaraSystem.SubInterface.Sales
                 string ID = "select customerID from customer where customerName='"+textBox4.Text+"'";
                 string number = "select contactNumber from customer where customerName='"+textBox4.Text+"'";
                 string Address = "select Address from customer where customerName='"+textBox4.Text+"'";
+                string query2 = "select * from slorders  where cusName='" + textBox4.Text + "'";
 
                 textBox3.Text = d1.getString(ID);
                 textBox5.Text = d1.getString(number);
                 richTextBox1.Text = d1.getString(Address);
+                d1.displayData(query2, dataGridView2);
+
 
             }
             else
@@ -167,6 +182,27 @@ namespace HarasaraSystem.SubInterface.Sales
                 textBox5.Text = null;
                 richTextBox1.Text = null;
             }
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+          /*  string query2 = " select count(*) from slorders where cusID='" + textBox3.Text + "'";
+
+            string query = "select * from slorders  where cusName='"+textBox4.Text+"'";
+            databaseAccess d1 = new databaseAccess();
+            if (1 == (d1.getValue(query2)))
+            {
+                d1.displayData(query, dataGridView2);
+
+            }*/
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            textBox3.Text = "           ";
+            textBox4.Text = "             ";
+            textBox5.Text = "            ";
+            richTextBox1.Text = "        ";
         }
     }
 }

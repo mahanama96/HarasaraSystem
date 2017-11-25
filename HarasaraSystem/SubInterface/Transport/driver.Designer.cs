@@ -86,8 +86,9 @@
             this.panel2.Controls.Add(this.bunifuImageButton2);
             this.panel2.Controls.Add(this.bunifuImageButton1);
             this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1098, 26);
+            this.panel2.Size = new System.Drawing.Size(1464, 32);
             this.panel2.TabIndex = 6;
             // 
             // label5
@@ -95,9 +96,10 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(12, 2);
+            this.label5.Location = new System.Drawing.Point(16, 2);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(241, 20);
+            this.label5.Size = new System.Drawing.Size(289, 25);
             this.label5.TabIndex = 73;
             this.label5.Text = "Harasara Industries (Pvt) Ltd";
             // 
@@ -106,9 +108,10 @@
             this.lblDate.AutoSize = true;
             this.lblDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDate.ForeColor = System.Drawing.Color.White;
-            this.lblDate.Location = new System.Drawing.Point(616, 3);
+            this.lblDate.Location = new System.Drawing.Point(821, 4);
+            this.lblDate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(143, 20);
+            this.lblDate.Size = new System.Drawing.Size(173, 25);
             this.lblDate.TabIndex = 101;
             this.lblDate.Text = "October 25 2017";
             // 
@@ -117,9 +120,10 @@
             this.lblSecond.AutoSize = true;
             this.lblSecond.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSecond.ForeColor = System.Drawing.Color.White;
-            this.lblSecond.Location = new System.Drawing.Point(820, 3);
+            this.lblSecond.Location = new System.Drawing.Point(1093, 4);
+            this.lblSecond.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSecond.Name = "lblSecond";
-            this.lblSecond.Size = new System.Drawing.Size(34, 20);
+            this.lblSecond.Size = new System.Drawing.Size(43, 25);
             this.lblSecond.TabIndex = 102;
             this.lblSecond.Text = ":22";
             // 
@@ -128,9 +132,10 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label4.Location = new System.Drawing.Point(439, 3);
+            this.label4.Location = new System.Drawing.Point(585, 4);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(105, 20);
+            this.label4.Size = new System.Drawing.Size(129, 25);
             this.label4.TabIndex = 73;
             this.label4.Text = "Driver Menu";
             // 
@@ -139,9 +144,10 @@
             this.lblTime.AutoSize = true;
             this.lblTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTime.ForeColor = System.Drawing.Color.White;
-            this.lblTime.Location = new System.Drawing.Point(765, 3);
+            this.lblTime.Location = new System.Drawing.Point(1020, 4);
+            this.lblTime.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTime.Name = "lblTime";
-            this.lblTime.Size = new System.Drawing.Size(59, 20);
+            this.lblTime.Size = new System.Drawing.Size(73, 25);
             this.lblTime.TabIndex = 103;
             this.lblTime.Text = "22 :22";
             // 
@@ -150,9 +156,10 @@
             this.bunifuImageButton2.BackColor = System.Drawing.Color.SeaGreen;
             this.bunifuImageButton2.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton2.Image")));
             this.bunifuImageButton2.ImageActive = null;
-            this.bunifuImageButton2.Location = new System.Drawing.Point(867, 3);
+            this.bunifuImageButton2.Location = new System.Drawing.Point(1156, 4);
+            this.bunifuImageButton2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bunifuImageButton2.Name = "bunifuImageButton2";
-            this.bunifuImageButton2.Size = new System.Drawing.Size(25, 21);
+            this.bunifuImageButton2.Size = new System.Drawing.Size(33, 26);
             this.bunifuImageButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.bunifuImageButton2.TabIndex = 8;
             this.bunifuImageButton2.TabStop = false;
@@ -164,9 +171,10 @@
             this.bunifuImageButton1.BackColor = System.Drawing.Color.SeaGreen;
             this.bunifuImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.Image")));
             this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(897, 3);
+            this.bunifuImageButton1.Location = new System.Drawing.Point(1196, 4);
+            this.bunifuImageButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.Size = new System.Drawing.Size(25, 21);
+            this.bunifuImageButton1.Size = new System.Drawing.Size(33, 26);
             this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.bunifuImageButton1.TabIndex = 7;
             this.bunifuImageButton1.TabStop = false;
@@ -181,9 +189,10 @@
             this.panel1.Controls.Add(this.bunifuThinButton3);
             this.panel1.Controls.Add(this.bunifuThinButton2);
             this.panel1.Controls.Add(this.bunifuThinButton1);
-            this.panel1.Location = new System.Drawing.Point(1, 25);
+            this.panel1.Location = new System.Drawing.Point(1, 31);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(197, 755);
+            this.panel1.Size = new System.Drawing.Size(263, 929);
             this.panel1.TabIndex = 7;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -192,9 +201,10 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label7.Location = new System.Drawing.Point(58, 172);
+            this.label7.Location = new System.Drawing.Point(77, 212);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(77, 20);
+            this.label7.Size = new System.Drawing.Size(93, 25);
             this.label7.TabIndex = 100;
             this.label7.Text = "User123";
             // 
@@ -202,9 +212,10 @@
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(38, 35);
+            this.pictureBox1.Location = new System.Drawing.Point(51, 43);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(121, 121);
+            this.pictureBox1.Size = new System.Drawing.Size(161, 149);
             this.pictureBox1.TabIndex = 69;
             this.pictureBox1.TabStop = false;
             // 
@@ -220,9 +231,10 @@
             this.bunifuThinButton3.IconVisible = true;
             this.bunifuThinButton3.IconZoom = 90D;
             this.bunifuThinButton3.ImageIconOverlay = false;
-            this.bunifuThinButton3.Location = new System.Drawing.Point(38, 427);
+            this.bunifuThinButton3.Location = new System.Drawing.Point(51, 526);
+            this.bunifuThinButton3.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.bunifuThinButton3.Name = "bunifuThinButton3";
-            this.bunifuThinButton3.Size = new System.Drawing.Size(121, 36);
+            this.bunifuThinButton3.Size = new System.Drawing.Size(161, 44);
             this.bunifuThinButton3.TabIndex = 20;
             this.bunifuThinButton3.Click += new System.EventHandler(this.bunifuThinButton3_Click_1);
             // 
@@ -238,9 +250,10 @@
             this.bunifuThinButton2.IconVisible = true;
             this.bunifuThinButton2.IconZoom = 90D;
             this.bunifuThinButton2.ImageIconOverlay = false;
-            this.bunifuThinButton2.Location = new System.Drawing.Point(38, 260);
+            this.bunifuThinButton2.Location = new System.Drawing.Point(51, 320);
+            this.bunifuThinButton2.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.bunifuThinButton2.Name = "bunifuThinButton2";
-            this.bunifuThinButton2.Size = new System.Drawing.Size(121, 36);
+            this.bunifuThinButton2.Size = new System.Drawing.Size(161, 63);
             this.bunifuThinButton2.TabIndex = 19;
             this.bunifuThinButton2.Click += new System.EventHandler(this.bunifuThinButton2_Click_1);
             // 
@@ -256,10 +269,12 @@
             this.bunifuThinButton1.IconVisible = true;
             this.bunifuThinButton1.IconZoom = 90D;
             this.bunifuThinButton1.ImageIconOverlay = false;
-            this.bunifuThinButton1.Location = new System.Drawing.Point(38, 341);
+            this.bunifuThinButton1.Location = new System.Drawing.Point(51, 420);
+            this.bunifuThinButton1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.bunifuThinButton1.Name = "bunifuThinButton1";
-            this.bunifuThinButton1.Size = new System.Drawing.Size(121, 36);
+            this.bunifuThinButton1.Size = new System.Drawing.Size(161, 61);
             this.bunifuThinButton1.TabIndex = 18;
+            this.bunifuThinButton1.Click += new System.EventHandler(this.bunifuThinButton1_Click_1);
             // 
             // bunifuThinButton5
             // 
@@ -274,10 +289,10 @@
             this.bunifuThinButton5.IconVisible = false;
             this.bunifuThinButton5.IconZoom = 90D;
             this.bunifuThinButton5.ImageIconOverlay = false;
-            this.bunifuThinButton5.Location = new System.Drawing.Point(213, 61);
-            this.bunifuThinButton5.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.bunifuThinButton5.Location = new System.Drawing.Point(284, 75);
+            this.bunifuThinButton5.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.bunifuThinButton5.Name = "bunifuThinButton5";
-            this.bunifuThinButton5.Size = new System.Drawing.Size(118, 35);
+            this.bunifuThinButton5.Size = new System.Drawing.Size(157, 54);
             this.bunifuThinButton5.TabIndex = 13;
             this.bunifuThinButton5.Click += new System.EventHandler(this.bunifuThinButton5_Click);
             // 
@@ -288,9 +303,10 @@
             this.bunifuTextbox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuTextbox1.ForeColor = System.Drawing.Color.SeaGreen;
             this.bunifuTextbox1.Icon = ((System.Drawing.Image)(resources.GetObject("bunifuTextbox1.Icon")));
-            this.bunifuTextbox1.Location = new System.Drawing.Point(344, 61);
+            this.bunifuTextbox1.Location = new System.Drawing.Point(459, 75);
+            this.bunifuTextbox1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.bunifuTextbox1.Name = "bunifuTextbox1";
-            this.bunifuTextbox1.Size = new System.Drawing.Size(156, 35);
+            this.bunifuTextbox1.Size = new System.Drawing.Size(208, 43);
             this.bunifuTextbox1.TabIndex = 12;
             this.bunifuTextbox1.text = "";
             // 
@@ -307,10 +323,10 @@
             this.bunifuThinButton6.IconVisible = false;
             this.bunifuThinButton6.IconZoom = 90D;
             this.bunifuThinButton6.ImageIconOverlay = false;
-            this.bunifuThinButton6.Location = new System.Drawing.Point(220, 307);
-            this.bunifuThinButton6.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.bunifuThinButton6.Location = new System.Drawing.Point(293, 378);
+            this.bunifuThinButton6.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.bunifuThinButton6.Name = "bunifuThinButton6";
-            this.bunifuThinButton6.Size = new System.Drawing.Size(113, 35);
+            this.bunifuThinButton6.Size = new System.Drawing.Size(151, 50);
             this.bunifuThinButton6.TabIndex = 16;
             this.bunifuThinButton6.Click += new System.EventHandler(this.bunifuThinButton6_Click);
             // 
@@ -318,9 +334,10 @@
             // 
             this.bunifuCustomTextbox4.BorderColor = System.Drawing.Color.SeaGreen;
             this.bunifuCustomTextbox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomTextbox4.Location = new System.Drawing.Point(344, 397);
+            this.bunifuCustomTextbox4.Location = new System.Drawing.Point(459, 489);
+            this.bunifuCustomTextbox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bunifuCustomTextbox4.Name = "bunifuCustomTextbox4";
-            this.bunifuCustomTextbox4.Size = new System.Drawing.Size(160, 22);
+            this.bunifuCustomTextbox4.Size = new System.Drawing.Size(212, 26);
             this.bunifuCustomTextbox4.TabIndex = 54;
             this.bunifuCustomTextbox4.TextChanged += new System.EventHandler(this.bunifuCustomTextbox4_TextChanged);
             this.bunifuCustomTextbox4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.bunifuCustomTextbox4_KeyPress);
@@ -330,10 +347,11 @@
             this.bunifuCustomTextbox2.BorderColor = System.Drawing.Color.SeaGreen;
             this.bunifuCustomTextbox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.bunifuCustomTextbox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomTextbox2.Location = new System.Drawing.Point(592, 357);
+            this.bunifuCustomTextbox2.Location = new System.Drawing.Point(789, 439);
+            this.bunifuCustomTextbox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bunifuCustomTextbox2.Multiline = true;
             this.bunifuCustomTextbox2.Name = "bunifuCustomTextbox2";
-            this.bunifuCustomTextbox2.Size = new System.Drawing.Size(325, 65);
+            this.bunifuCustomTextbox2.Size = new System.Drawing.Size(433, 80);
             this.bunifuCustomTextbox2.TabIndex = 52;
             // 
             // bunifuCustomLabel5
@@ -341,9 +359,10 @@
             this.bunifuCustomLabel5.AutoSize = true;
             this.bunifuCustomLabel5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel5.ForeColor = System.Drawing.Color.Transparent;
-            this.bunifuCustomLabel5.Location = new System.Drawing.Point(522, 354);
+            this.bunifuCustomLabel5.Location = new System.Drawing.Point(696, 436);
+            this.bunifuCustomLabel5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.bunifuCustomLabel5.Name = "bunifuCustomLabel5";
-            this.bunifuCustomLabel5.Size = new System.Drawing.Size(64, 19);
+            this.bunifuCustomLabel5.Size = new System.Drawing.Size(78, 23);
             this.bunifuCustomLabel5.TabIndex = 50;
             this.bunifuCustomLabel5.Text = "Address";
             // 
@@ -360,10 +379,10 @@
             this.bunifuThinButton7.IconVisible = false;
             this.bunifuThinButton7.IconZoom = 90D;
             this.bunifuThinButton7.ImageIconOverlay = false;
-            this.bunifuThinButton7.Location = new System.Drawing.Point(499, 530);
-            this.bunifuThinButton7.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.bunifuThinButton7.Location = new System.Drawing.Point(665, 652);
+            this.bunifuThinButton7.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.bunifuThinButton7.Name = "bunifuThinButton7";
-            this.bunifuThinButton7.Size = new System.Drawing.Size(105, 44);
+            this.bunifuThinButton7.Size = new System.Drawing.Size(140, 54);
             this.bunifuThinButton7.TabIndex = 49;
             this.bunifuThinButton7.Click += new System.EventHandler(this.bunifuThinButton7_Click);
             // 
@@ -380,10 +399,10 @@
             this.bunifuThinButton8.IconVisible = false;
             this.bunifuThinButton8.IconZoom = 90D;
             this.bunifuThinButton8.ImageIconOverlay = false;
-            this.bunifuThinButton8.Location = new System.Drawing.Point(219, 530);
-            this.bunifuThinButton8.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.bunifuThinButton8.Location = new System.Drawing.Point(292, 652);
+            this.bunifuThinButton8.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.bunifuThinButton8.Name = "bunifuThinButton8";
-            this.bunifuThinButton8.Size = new System.Drawing.Size(112, 44);
+            this.bunifuThinButton8.Size = new System.Drawing.Size(149, 54);
             this.bunifuThinButton8.TabIndex = 48;
             this.bunifuThinButton8.Click += new System.EventHandler(this.bunifuThinButton8_Click);
             // 
@@ -392,9 +411,10 @@
             this.bunifuCustomLabel4.AutoSize = true;
             this.bunifuCustomLabel4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel4.ForeColor = System.Drawing.Color.Transparent;
-            this.bunifuCustomLabel4.Location = new System.Drawing.Point(214, 437);
+            this.bunifuCustomLabel4.Location = new System.Drawing.Point(285, 538);
+            this.bunifuCustomLabel4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.bunifuCustomLabel4.Name = "bunifuCustomLabel4";
-            this.bunifuCustomLabel4.Size = new System.Drawing.Size(119, 19);
+            this.bunifuCustomLabel4.Size = new System.Drawing.Size(149, 23);
             this.bunifuCustomLabel4.TabIndex = 47;
             this.bunifuCustomLabel4.Text = "Contact Number";
             // 
@@ -403,9 +423,10 @@
             this.bunifuCustomLabel2.AutoSize = true;
             this.bunifuCustomLabel2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel2.ForeColor = System.Drawing.Color.Transparent;
-            this.bunifuCustomLabel2.Location = new System.Drawing.Point(217, 399);
+            this.bunifuCustomLabel2.Location = new System.Drawing.Point(289, 491);
+            this.bunifuCustomLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
-            this.bunifuCustomLabel2.Size = new System.Drawing.Size(97, 19);
+            this.bunifuCustomLabel2.Size = new System.Drawing.Size(119, 23);
             this.bunifuCustomLabel2.TabIndex = 45;
             this.bunifuCustomLabel2.Text = "Driver Name";
             this.bunifuCustomLabel2.Click += new System.EventHandler(this.bunifuCustomLabel2_Click);
@@ -414,18 +435,20 @@
             // 
             this.bunifuCustomTextbox5.BorderColor = System.Drawing.Color.SeaGreen;
             this.bunifuCustomTextbox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomTextbox5.Location = new System.Drawing.Point(345, 435);
+            this.bunifuCustomTextbox5.Location = new System.Drawing.Point(460, 535);
+            this.bunifuCustomTextbox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bunifuCustomTextbox5.Name = "bunifuCustomTextbox5";
-            this.bunifuCustomTextbox5.Size = new System.Drawing.Size(121, 22);
+            this.bunifuCustomTextbox5.Size = new System.Drawing.Size(160, 26);
             this.bunifuCustomTextbox5.TabIndex = 55;
             this.bunifuCustomTextbox5.TextChanged += new System.EventHandler(this.bunifuCustomTextbox5_TextChanged);
             this.bunifuCustomTextbox5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.bunifuCustomTextbox5_KeyPress);
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(344, 479);
+            this.dateTimePicker1.Location = new System.Drawing.Point(459, 590);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker1.Size = new System.Drawing.Size(265, 22);
             this.dateTimePicker1.TabIndex = 60;
             // 
             // bunifuCustomLabel6
@@ -433,18 +456,20 @@
             this.bunifuCustomLabel6.AutoSize = true;
             this.bunifuCustomLabel6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel6.ForeColor = System.Drawing.Color.Transparent;
-            this.bunifuCustomLabel6.Location = new System.Drawing.Point(218, 480);
+            this.bunifuCustomLabel6.Location = new System.Drawing.Point(291, 591);
+            this.bunifuCustomLabel6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.bunifuCustomLabel6.Name = "bunifuCustomLabel6";
-            this.bunifuCustomLabel6.Size = new System.Drawing.Size(101, 19);
+            this.bunifuCustomLabel6.Size = new System.Drawing.Size(127, 23);
             this.bunifuCustomLabel6.TabIndex = 61;
             this.bunifuCustomLabel6.Text = "Date Of Birth";
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(218, 138);
+            this.dataGridView1.Location = new System.Drawing.Point(291, 170);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(703, 163);
+            this.dataGridView1.Size = new System.Drawing.Size(937, 201);
             this.dataGridView1.TabIndex = 62;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -461,10 +486,10 @@
             this.bunifuThinButton9.IconVisible = false;
             this.bunifuThinButton9.IconZoom = 90D;
             this.bunifuThinButton9.ImageIconOverlay = false;
-            this.bunifuThinButton9.Location = new System.Drawing.Point(355, 530);
-            this.bunifuThinButton9.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.bunifuThinButton9.Location = new System.Drawing.Point(473, 652);
+            this.bunifuThinButton9.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.bunifuThinButton9.Name = "bunifuThinButton9";
-            this.bunifuThinButton9.Size = new System.Drawing.Size(112, 44);
+            this.bunifuThinButton9.Size = new System.Drawing.Size(149, 54);
             this.bunifuThinButton9.TabIndex = 63;
             this.bunifuThinButton9.Click += new System.EventHandler(this.bunifuThinButton9_Click);
             // 
@@ -481,10 +506,10 @@
             this.bunifuThinButton10.IconVisible = false;
             this.bunifuThinButton10.IconZoom = 90D;
             this.bunifuThinButton10.ImageIconOverlay = false;
-            this.bunifuThinButton10.Location = new System.Drawing.Point(524, 61);
-            this.bunifuThinButton10.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.bunifuThinButton10.Location = new System.Drawing.Point(699, 75);
+            this.bunifuThinButton10.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.bunifuThinButton10.Name = "bunifuThinButton10";
-            this.bunifuThinButton10.Size = new System.Drawing.Size(118, 35);
+            this.bunifuThinButton10.Size = new System.Drawing.Size(157, 54);
             this.bunifuThinButton10.TabIndex = 64;
             this.bunifuThinButton10.Click += new System.EventHandler(this.bunifuThinButton10_Click);
             // 
@@ -493,9 +518,10 @@
             this.bunifuCustomLabel1.AutoSize = true;
             this.bunifuCustomLabel1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.Transparent;
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(218, 366);
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(291, 450);
+            this.bunifuCustomLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(75, 19);
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(91, 23);
             this.bunifuCustomLabel1.TabIndex = 65;
             this.bunifuCustomLabel1.Text = "Driver ID";
             // 
@@ -503,9 +529,10 @@
             // 
             this.bunifuCustomTextbox1.BorderColor = System.Drawing.Color.SeaGreen;
             this.bunifuCustomTextbox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomTextbox1.Location = new System.Drawing.Point(343, 363);
+            this.bunifuCustomTextbox1.Location = new System.Drawing.Point(457, 447);
+            this.bunifuCustomTextbox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bunifuCustomTextbox1.Name = "bunifuCustomTextbox1";
-            this.bunifuCustomTextbox1.Size = new System.Drawing.Size(85, 22);
+            this.bunifuCustomTextbox1.Size = new System.Drawing.Size(112, 26);
             this.bunifuCustomTextbox1.TabIndex = 68;
             this.bunifuCustomTextbox1.TextChanged += new System.EventHandler(this.bunifuCustomTextbox1_TextChanged);
             this.bunifuCustomTextbox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.bunifuCustomTextbox1_KeyPress);
@@ -516,9 +543,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(472, 441);
+            this.label1.Location = new System.Drawing.Point(629, 543);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 15);
+            this.label1.Size = new System.Drawing.Size(0, 18);
             this.label1.TabIndex = 69;
             // 
             // label2
@@ -526,9 +554,10 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(510, 401);
+            this.label2.Location = new System.Drawing.Point(680, 494);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(0, 15);
+            this.label2.Size = new System.Drawing.Size(0, 18);
             this.label2.TabIndex = 70;
             // 
             // label3
@@ -536,9 +565,10 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Red;
-            this.label3.Location = new System.Drawing.Point(595, 428);
+            this.label3.Location = new System.Drawing.Point(793, 527);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(0, 15);
+            this.label3.Size = new System.Drawing.Size(0, 18);
             this.label3.TabIndex = 71;
             // 
             // bunifuThinButton11
@@ -554,10 +584,10 @@
             this.bunifuThinButton11.IconVisible = false;
             this.bunifuThinButton11.IconZoom = 90D;
             this.bunifuThinButton11.ImageIconOverlay = false;
-            this.bunifuThinButton11.Location = new System.Drawing.Point(650, 61);
-            this.bunifuThinButton11.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.bunifuThinButton11.Location = new System.Drawing.Point(867, 75);
+            this.bunifuThinButton11.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.bunifuThinButton11.Name = "bunifuThinButton11";
-            this.bunifuThinButton11.Size = new System.Drawing.Size(118, 35);
+            this.bunifuThinButton11.Size = new System.Drawing.Size(157, 54);
             this.bunifuThinButton11.TabIndex = 72;
             this.bunifuThinButton11.Click += new System.EventHandler(this.bunifuThinButton11_Click);
             // 
@@ -567,10 +597,10 @@
             // 
             // driver
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.ClientSize = new System.Drawing.Size(943, 602);
+            this.ClientSize = new System.Drawing.Size(1257, 741);
             this.Controls.Add(this.bunifuThinButton11);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -596,6 +626,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "driver";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "hklmli";

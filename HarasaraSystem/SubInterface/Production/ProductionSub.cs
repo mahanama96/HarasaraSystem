@@ -42,7 +42,9 @@ namespace HarasaraSystem.SubInterface.Production
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+            MainMenu mm = new MainMenu();
+            mm.Show();
+            this.Hide();
             
         }
 
@@ -72,6 +74,21 @@ namespace HarasaraSystem.SubInterface.Production
             {
                 HarasaraSystem.SubInterface.Production.OrderProcessingUC.Instance.BringToFront();
             }
+        }
+
+        private void bunifuFlatButton3_Click(object sender, EventArgs e)
+        {
+            AddProduct myForm = new AddProduct();
+            myForm.TopLevel = false;
+            myForm.AutoScroll = true;
+            this.panel3.Controls.Add(myForm);
+            myForm.Show();
+            
+            
+            
+            
+
+            
         }
     }
 }

@@ -55,31 +55,31 @@ namespace HarasaraSystem.SubInterface.Sales
         private void comboBox1_TextChanged(object sender, EventArgs e)
         {
             string query = "select contactNumber from customer where customerName='" + comboBox1.Text + "'";
-            string query2="select customerID from customer where customerName='"+comboBox1.Text+"'";
-            databaseAccess d1 = new databaseAccess();
-            textBox5.Text=d1.getString(query);
-            string cusID = d1.getString(query2);
+            string query2=" select customerID from customer where customerName='"+comboBox1.Text+"'";
+            databaseAccess d1=new databaseAccess();
+            textBox5.Text = d1.getString(query);
+            string ID=d1.getString(query2);
 
-            string query3="select * from payments where customerID='"+cusID+"'";
+            string query3 = "select * from payments where customerID='" + ID + "'";
             d1.displayData(query3, dataGridView1);
 
-          
 
-           
         }
 
         private void comboBox9_TextChanged(object sender, EventArgs e)
         {
-            databaseAccess d1=new databaseAccess();
-            
-            string query = "select contactNumber from supplier where supplierName='"+comboBox9.Text+"'";
+            string query = "select contactNumber from supplier where supplierName='" + comboBox9.Text + "'";
+            string query2 = " select SupID from supplier where supplierName='" + comboBox9.Text + "'";
+            databaseAccess d1 = new databaseAccess();
             textBox3.Text = d1.getString(query);
-            string query2 = "select SupID  from supplier where supplierName='"+comboBox9.Text+"'";
+            string ID = d1.getString(query2);
 
-            string supID = d1.getString(query2);
-            string query3 = "select * from  purchasepayments where SupplierID='"+supID+"'";
+            string query3 = "select * from purchasepayments where SupplierID='" + ID + "'";
             d1.displayData(query3, dataGridView3);
+
         }
+
+       
 
         
     }

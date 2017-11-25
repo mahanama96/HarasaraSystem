@@ -29,6 +29,7 @@ namespace BMS_harasara
         {
             InitializeComponent();
             fillcombo();
+            fillGRN();
         }
 
         void fillcombo()
@@ -52,6 +53,30 @@ namespace BMS_harasara
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "database error");   
+            }
+        }
+
+        void fillGRN()
+        {
+            string qry = "Select DISTINCT orderID from ordereditems;";
+
+            MySqlConnection connst = new MySqlConnection("server=localhost;user id=root;database=harasara");
+            MySqlCommand cmd1 = new MySqlCommand(qry, connst);
+            MySqlDataReader reader;
+
+            try
+            {
+                connst.Open();
+                reader = cmd1.ExecuteReader();
+                while (reader.Read())
+                {
+                    string order = reader.GetString("orderID");
+                    comboBox2.Items.Add(order);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "database error");
             }
         }
 
@@ -84,7 +109,7 @@ namespace BMS_harasara
             String name=textBox1.Text;
             String ttype = "Receipt";
 
-            String datenw = DateTime.Today.Date.ToString("MM/dd/yyyy");
+            String datenw = DateTime.Today.Date.ToString("yyyy-MM-dd");
 
             string qry = "Select * from inventory where item_id='"+itemId+"';";
 
@@ -256,6 +281,35 @@ namespace BMS_harasara
         private void groupBox1_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        void fillGRNDetails()
+        {
+            string query = "Select * from ordereditems where orderID = '"+comboBox2.SelectedItem.ToString()+"'";
+
+            BMS_harasara.dbconnect d1 = new BMS_harasara.dbconnect();
+            d1.displayData(query, dataGridView1);
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            fillGRNDetails();
+        }
+
+        void fillTransactions()
+        {
+            String stadate = dateTimePicker1.Text;
+            String enddate = dateTimePicker2.Text;
+
+            string query = "SELECT * FROM inv_trans WHERE type='Receipt' AND date BETWEEN '"+stadate+"' AND '"+enddate+"'";
+            
+            BMS_harasara.dbconnect d1 = new BMS_harasara.dbconnect();
+            d1.displayData(query, dataGridView3);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            fillTransactions();
         } 
     }
 }

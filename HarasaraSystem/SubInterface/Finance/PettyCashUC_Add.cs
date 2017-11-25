@@ -242,7 +242,7 @@ namespace HarasaraSystem.SubInterface.Finance
         }
         private void bunifuFlatButton1_Click(object sender, EventArgs e)
         {
-            //SendSMS();
+            SendSMS();
             if (!panel1.Controls.Contains(PettyCashUC_Add_Edit._Instance_pc_add))
             {
                 panel1.Controls.Add(PettyCashUC_Add_Edit._Instance_pc_add);

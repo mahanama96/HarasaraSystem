@@ -95,6 +95,9 @@ namespace HarasaraSystem.SubInterface.Sales
             if (label7.Text == "SupplierID")
             {
 
+                radioButton3.Enabled = false;
+                radioButton4.Enabled = false;
+                radioButton2.Enabled = false;
                 databaseAccess d2 = new databaseAccess();
 
                 string pID = "PU" + invoiceBill.Text + label2.Text;
@@ -106,11 +109,9 @@ namespace HarasaraSystem.SubInterface.Sales
                     d2.InsertData(query1);
 
                 }
-                else if( pType=="Credit")
-                {
+               
+                CustomMsgBox.Show("Payment was successfull", "OK");
                     
-                }
-
 
             }
             else
@@ -185,6 +186,11 @@ namespace HarasaraSystem.SubInterface.Sales
         {
             validation v = new validation();
             v.creditCardValidations(textBox1.Text, label6);
+        }
+
+        private void bunifuImageButton1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
         }
 
        

@@ -50,22 +50,22 @@ namespace HarasaraSystem.SubInterface.Finance
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             loadChart();
-            if (string.Compare(dateTimePicker1.Value.ToString(), dateTimePicker2.Value.ToString()) > 0)
-            {
-                MessageBox.Show("Invalid date!");
+            //if (string.Compare(dateTimePicker1.Value.ToString(), dateTimePicker2.Value.ToString()) > 0)
+            //{
+              //  MessageBox.Show("Invalid date!");
                 //dateTimePicker1.Focus();
                 //return;
-            }
+            //}
            /* else if (string.Compare(dateTimePicker2.Value.ToString(), dateTimePicker1.Value.ToString()) < 0)
             {
                 MessageBox.Show("Invalid date!");
                 //dateTimePicker1.Focus();
                 //return;
             }*/
-            else
-            {
+            //else
+            //{
                 CalculateTotal();
-            }
+            //}
         }
         public void CalculateTotal()
         {

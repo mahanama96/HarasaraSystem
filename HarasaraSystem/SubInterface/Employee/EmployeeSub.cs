@@ -158,6 +158,24 @@ namespace HarasaraSystem.SubInterface.Employee
                 SMS.Instance.BringToFront(); 
         }
 
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void bunifuFlatButton7_Click(object sender, EventArgs e)
+        {
+            if (!panel3.Controls.Contains(report.Instance))
+            {
+                panel3.Controls.Add(report.Instance);
+                report.Instance.Dock = DockStyle.Fill;
+                report.Instance.BringToFront();
+            }
+
+            else
+                report.Instance.BringToFront(); 
+        }
+
       
     }
 }

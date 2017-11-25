@@ -12,7 +12,7 @@
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <PublishUrl>C:\Users\Viraj Malaka\Desktop\system\</PublishUrl>
+    <PublishUrl>C:\Users\Viraj Malaka\Desktop\Publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
@@ -22,7 +22,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationRevision>4</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -141,6 +141,12 @@
     <Compile Include="SubInterface\Employee\AttendanceSystem.Designer.cs">
       <DependentUpon>AttendanceSystem.cs</DependentUpon>
     </Compile>
+    <Compile Include="SubInterface\Employee\CrystalReportEmp.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportEmp.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="SubInterface\Employee\DBAccess.cs" />
     <Compile Include="SubInterface\Employee\details.cs">
       <SubType>UserControl</SubType>
@@ -177,6 +183,12 @@
     </Compile>
     <Compile Include="SubInterface\Employee\payrolls.Designer.cs">
       <DependentUpon>payrolls.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubInterface\Employee\report.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SubInterface\Employee\report.Designer.cs">
+      <DependentUpon>report.cs</DependentUpon>
     </Compile>
     <Compile Include="SubInterface\Employee\search.cs">
       <SubType>UserControl</SubType>
@@ -276,6 +288,12 @@
     <Compile Include="SubInterface\Finance\ProfitLossUC_Main.Designer.cs">
       <DependentUpon>ProfitLossUC_Main.cs</DependentUpon>
     </Compile>
+    <Compile Include="SubInterface\Inventory\CrystalReportInv.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportInv.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="SubInterface\Inventory\dbconnect.cs" />
     <Compile Include="SubInterface\Inventory\InventorySub.cs">
       <SubType>Form</SubType>
@@ -307,10 +325,23 @@
     <Compile Include="SubInterface\Inventory\inv_IssueStock.Designer.cs">
       <DependentUpon>inv_IssueStock.cs</DependentUpon>
     </Compile>
+    <Compile Include="SubInterface\Inventory\Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubInterface\Inventory\Report.Designer.cs">
+      <DependentUpon>Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubInterface\Production\AddProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubInterface\Production\AddProduct.Designer.cs">
+      <DependentUpon>AddProduct.cs</DependentUpon>
+    </Compile>
     <Compile Include="SubInterface\Production\Cutting.cs" />
     <Compile Include="SubInterface\Production\DBAccess.cs" />
     <Compile Include="SubInterface\Production\Drilling.cs" />
     <Compile Include="SubInterface\Production\Finishing.cs" />
+    <Compile Include="SubInterface\Production\FinishProcess.cs" />
     <Compile Include="SubInterface\Production\Fitting.cs" />
     <Compile Include="SubInterface\Production\Manufacturing.cs" />
     <Compile Include="SubInterface\Production\OrderProcessingUC.cs">
@@ -327,18 +358,35 @@
     </Compile>
     <Compile Include="SubInterface\Production\Painting.cs" />
     <Compile Include="SubInterface\Production\prepareOrder.cs" />
+    <Compile Include="SubInterface\Production\Product.cs" />
     <Compile Include="SubInterface\Production\ProductionSub.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="SubInterface\Production\ProductionSub.Designer.cs">
       <DependentUpon>ProductionSub.cs</DependentUpon>
     </Compile>
+    <Compile Include="SubInterface\Production\ProductItem.cs" />
+    <Compile Include="SubInterface\Production\ProductItems.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubInterface\Production\ProductItems.Designer.cs">
+      <DependentUpon>ProductItems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubInterface\Production\ProductService.cs" />
+    <Compile Include="SubInterface\Production\Progress.cs" />
+    <Compile Include="SubInterface\Production\requestInventory.cs" />
     <Compile Include="SubInterface\Production\splitOrder.cs" />
     <Compile Include="SubInterface\Sales\Bill.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="SubInterface\Sales\Bill.Designer.cs">
       <DependentUpon>Bill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubInterface\Sales\CrystalReportSal.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportSal.rpt</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="SubInterface\Sales\CustomMsgBox.cs">
       <SubType>Form</SubType>
@@ -359,6 +407,12 @@
     <Compile Include="SubInterface\Sales\PurchasingOrders.Designer.cs">
       <DependentUpon>PurchasingOrders.cs</DependentUpon>
     </Compile>
+    <Compile Include="SubInterface\Sales\Reports.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SubInterface\Sales\Reports.Designer.cs">
+      <DependentUpon>Reports.cs</DependentUpon>
+    </Compile>
     <Compile Include="SubInterface\Sales\SalesOrders.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -378,6 +432,12 @@
       <DependentUpon>setting.cs</DependentUpon>
     </Compile>
     <Compile Include="SubInterface\Sales\validation.cs" />
+    <Compile Include="SubInterface\Transport\CrystalReportTrans.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportTrans.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="SubInterface\Transport\Database.cs" />
     <Compile Include="SubInterface\Transport\dbconnect.cs" />
     <Compile Include="SubInterface\Transport\driver.cs">
@@ -463,6 +523,10 @@
     <EmbeddedResource Include="SubInterface\Employee\AttendanceSystem.resx">
       <DependentUpon>AttendanceSystem.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="SubInterface\Employee\CrystalReportEmp.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportEmp.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="SubInterface\Employee\details.resx">
       <DependentUpon>details.cs</DependentUpon>
     </EmbeddedResource>
@@ -480,6 +544,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SubInterface\Employee\payrolls.resx">
       <DependentUpon>payrolls.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubInterface\Employee\report.resx">
+      <DependentUpon>report.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SubInterface\Employee\search.resx">
       <DependentUpon>search.cs</DependentUpon>
@@ -530,6 +597,10 @@
     <EmbeddedResource Include="SubInterface\Finance\ProfitLossUC_Main.resx">
       <DependentUpon>ProfitLossUC_Main.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="SubInterface\Inventory\CrystalReportInv.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportInv.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="SubInterface\Inventory\InventorySub.resx">
       <DependentUpon>InventorySub.cs</DependentUpon>
     </EmbeddedResource>
@@ -545,6 +616,12 @@
     <EmbeddedResource Include="SubInterface\Inventory\inv_IssueStock.resx">
       <DependentUpon>inv_IssueStock.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="SubInterface\Inventory\Report.resx">
+      <DependentUpon>Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubInterface\Production\AddProduct.resx">
+      <DependentUpon>AddProduct.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SubInterface\Production\OrderProcessingUC.resx">
       <DependentUpon>OrderProcessingUC.cs</DependentUpon>
     </EmbeddedResource>
@@ -554,8 +631,15 @@
     <EmbeddedResource Include="SubInterface\Production\ProductionSub.resx">
       <DependentUpon>ProductionSub.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="SubInterface\Production\ProductItems.resx">
+      <DependentUpon>ProductItems.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SubInterface\Sales\Bill.resx">
       <DependentUpon>Bill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubInterface\Sales\CrystalReportSal.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportSal.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="SubInterface\Sales\CustomMsgBox.resx">
       <DependentUpon>CustomMsgBox.cs</DependentUpon>
@@ -566,7 +650,9 @@
     <EmbeddedResource Include="SubInterface\Sales\PurchasingOrders.resx">
       <DependentUpon>PurchasingOrders.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SubInterface\Sales\SalesMainSub.resx" />
+    <EmbeddedResource Include="SubInterface\Sales\Reports.resx">
+      <DependentUpon>Reports.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SubInterface\Sales\SalesOrders.resx">
       <DependentUpon>SalesOrders.cs</DependentUpon>
     </EmbeddedResource>
@@ -575,6 +661,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SubInterface\Sales\setting.resx">
       <DependentUpon>setting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubInterface\Transport\CrystalReportTrans.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportTrans.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="SubInterface\Transport\driver.resx">
       <DependentUpon>driver.cs</DependentUpon>
@@ -640,6 +730,7 @@
   <ItemGroup>
     <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

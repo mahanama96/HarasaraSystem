@@ -46,7 +46,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(344, 21);
+            this.button1.Location = new System.Drawing.Point(375, 23);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 28);
@@ -67,10 +67,10 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(97, 23);
+            this.comboBox1.Location = new System.Drawing.Point(118, 23);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(237, 24);
+            this.comboBox1.Size = new System.Drawing.Size(237, 28);
             this.comboBox1.TabIndex = 2;
             // 
             // label1
@@ -79,7 +79,7 @@
             this.label1.Location = new System.Drawing.Point(7, 27);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(81, 17);
+            this.label1.Size = new System.Drawing.Size(103, 20);
             this.label1.TabIndex = 3;
             this.label1.Text = "Warehouse";
             // 
@@ -89,6 +89,7 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(36, 52);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
@@ -96,6 +97,7 @@
             this.groupBox1.Size = new System.Drawing.Size(1232, 242);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Raw Material Equipment Paint";
             // 
             // groupBox2
             // 
@@ -104,6 +106,7 @@
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.button2);
             this.groupBox2.Controls.Add(this.comboBox2);
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(36, 319);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
@@ -111,6 +114,7 @@
             this.groupBox2.Size = new System.Drawing.Size(1232, 235);
             this.groupBox2.TabIndex = 5;
             this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Finished Items";
             this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
             // dataGridView2
@@ -128,13 +132,13 @@
             this.label2.Location = new System.Drawing.Point(11, 28);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(81, 17);
+            this.label2.Size = new System.Drawing.Size(103, 20);
             this.label2.TabIndex = 2;
             this.label2.Text = "Warehouse";
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(344, 21);
+            this.button2.Location = new System.Drawing.Point(375, 20);
             this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(100, 28);
@@ -146,10 +150,10 @@
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(97, 23);
+            this.comboBox2.Location = new System.Drawing.Point(118, 25);
             this.comboBox2.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(237, 24);
+            this.comboBox2.Size = new System.Drawing.Size(237, 28);
             this.comboBox2.TabIndex = 0;
             // 
             // inv_CheckLevel

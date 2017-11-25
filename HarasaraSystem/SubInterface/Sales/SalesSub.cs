@@ -110,5 +110,21 @@ namespace HarasaraSystem.SubInterface.Sales
             this.Hide();
 
         }
+
+        private void bunifuFlatButton1_Click(object sender, EventArgs e)
+        {
+            if (!panel3.Controls.Contains(HarasaraSystem.SubInterface.Sales.Reports.Instance))
+            {
+                panel3.Controls.Add(HarasaraSystem.SubInterface.Sales.Reports.Instance);
+                HarasaraSystem.SubInterface.Sales.Reports.Instance.Dock = DockStyle.Fill;
+                HarasaraSystem.SubInterface.Sales.Reports.Instance.BringToFront();
+            }
+            else
+            {
+                HarasaraSystem.SubInterface.Sales.Reports.Instance.BringToFront();
+            }
+
+
+        }
     }
 }

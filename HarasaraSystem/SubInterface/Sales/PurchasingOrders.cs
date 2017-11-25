@@ -198,10 +198,30 @@ namespace HarasaraSystem.SubInterface.Sales
 
         private void PurchasingOrders_Load(object sender, EventArgs e)
         {
-            string query = "select item_id,name,count  from inventory where count=rol";
+            string query = "select *  from reorder where status='Pending'";
 
             databaseAccess d1 = new databaseAccess();
             d1.displayData(query, dataGridView2);
+        }
+
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                string query = "Update reorder Set status ='Accepted' where itemId='" + dataGridView2.Rows[e.RowIndex].Cells["itemId"].Value + "'";
+
+                BMS_harasara.dbconnect conn = new BMS_harasara.dbconnect();
+                conn.ExQuery(query);
+                MessageBox.Show("Re Order Request Accepted");
+                string query1 = "select *  from reorder where status='Pending'";
+
+                databaseAccess d1 = new databaseAccess();
+                d1.displayData(query1, dataGridView2);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Database Error");
+            }
         }
 
         

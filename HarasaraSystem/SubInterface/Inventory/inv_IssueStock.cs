@@ -31,14 +31,30 @@ namespace BMS_harasara
             InitializeComponent();
             fillcombo1();
             fillreorders();
+            fillpendingorders();
         }
 
         void fillreorders()
         {
-            string query = "select item_id,name,count  from inventory where count=rol";
+            string query = "select item_id,name,count  from inventory where count<=rol";
 
             BMS_harasara.dbconnect d1 = new BMS_harasara.dbconnect();
             d1.displayData(query, dataGridView2);
+        }
+
+        void fillpendingorders()
+        {
+            string query = "select * from reorder";
+
+            BMS_harasara.dbconnect d1 = new BMS_harasara.dbconnect();
+            d1.displayData(query, dataGridView3);
+        }
+
+        void fillinvsumm()
+        {
+            string query = "select * from inventory where location = '" + label5.Text + "'";
+            BMS_harasara.dbconnect d1 = new BMS_harasara.dbconnect();
+            d1.displayData(query, dataGridView4);
         }
 
         void fillcombo1()
@@ -82,7 +98,7 @@ namespace BMS_harasara
             String name = textBox1.Text;
             String ttype = "Issue";
 
-            String datenw = DateTime.Now.ToString();
+            String datenw = DateTime.Today.Date.ToString("yyyy-MM-dd");
 
             string qry = "Select * from inventory where item_id='" + itemId + "';";
 
@@ -186,11 +202,15 @@ namespace BMS_harasara
             bsource.DataSource = dbdataset;
             dataGridView1.DataSource = bsource;
             sda.Update(dbdataset);
+
+            label5.Text=comboBox1.SelectedItem.ToString();
+
+            fillinvsumm();
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
-            TextBox objTextBox = (TextBox)sender;
+           /* TextBox objTextBox = (TextBox)sender;
             string theText = objTextBox.Text;
             String loc = (String)comboBox2.SelectedItem;
             string qry1 = "Select * from inventory where name = '" + theText + "'and location = '" + loc + "';";
@@ -214,7 +234,7 @@ namespace BMS_harasara
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "database error");
-            }
+            }*/
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -248,7 +268,40 @@ namespace BMS_harasara
 
         private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            if (e.RowIndex < 0 || e.ColumnIndex != dataGridView2.Columns["ReOrder"].Index) return;
+            else
+            {
+                try
+                {
+                    BMS_harasara.dbconnect conn=new BMS_harasara.dbconnect();
+                    String qry = "Insert into reorder(itemId,name) Values ('"+dataGridView2.Rows[e.RowIndex].Cells["item_id"].Value+"','"+dataGridView2.Rows[e.RowIndex].Cells["name"].Value.ToString()+"');";
+                    conn.ExQuery(qry);
+                    MessageBox.Show("Re Order Request Made for '" + dataGridView2.Rows[e.RowIndex].Cells["name"].Value.ToString() + "'");
+                    fillpendingorders();
+                    
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "Database Error");
+                }
+                
+            }
+        }
 
+        void fillTransactions()
+        {
+            String stadate = dateTimePicker1.Text;
+            String enddate = dateTimePicker2.Text;
+
+            string query = "SELECT * FROM inv_trans WHERE type='Issue' AND date BETWEEN '" + stadate + "' AND '" + enddate + "'";
+
+            BMS_harasara.dbconnect d1 = new BMS_harasara.dbconnect();
+            d1.displayData(query, dataGridView5);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            fillTransactions();
         }
     }
 }

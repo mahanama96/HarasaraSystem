@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using Tulpep.NotificationWindow;
 
 namespace Transport
 {
@@ -406,6 +407,14 @@ namespace Transport
             lblTime.Text = DateTime.Now.ToString("HH:mm");
             lblSecond.Text = DateTime.Now.ToString("ss");
             lblDate.Text = DateTime.Now.ToString("MMM dd yyyy");
+        }
+
+        private void bunifuThinButton5_Click(object sender, EventArgs e)
+        {
+            PopupNotifier popup = new PopupNotifier();
+            popup.TitleText = "Help";
+            popup.ContentText = "You can access to each of these subsections.\n To access please press the interface buttons";
+            popup.Popup();
         }
     }
 }

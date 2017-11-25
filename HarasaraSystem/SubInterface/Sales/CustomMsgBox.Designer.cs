@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.Yesbtn = new System.Windows.Forms.Button();
             this.MsgBoxLabel = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -45,6 +45,17 @@
             this.panel1.Size = new System.Drawing.Size(583, 37);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(72, 16);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Message";
             // 
             // Yesbtn
             // 
@@ -64,22 +75,11 @@
             this.MsgBoxLabel.AutoSize = true;
             this.MsgBoxLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MsgBoxLabel.ForeColor = System.Drawing.Color.Green;
-            this.MsgBoxLabel.Location = new System.Drawing.Point(179, 58);
+            this.MsgBoxLabel.Location = new System.Drawing.Point(126, 60);
             this.MsgBoxLabel.Name = "MsgBoxLabel";
             this.MsgBoxLabel.Size = new System.Drawing.Size(26, 18);
             this.MsgBoxLabel.TabIndex = 2;
             this.MsgBoxLabel.Text = "rrr";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(12, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(72, 16);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Message";
             // 
             // CustomMsgBox
             // 

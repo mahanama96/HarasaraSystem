@@ -106,6 +106,7 @@
             this.comboBox9.Name = "comboBox9";
             this.comboBox9.Size = new System.Drawing.Size(173, 26);
             this.comboBox9.TabIndex = 2;
+            this.comboBox9.TextChanged += new System.EventHandler(this.comboBox9_TextChanged);
             // 
             // label8
             // 
@@ -176,6 +177,7 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(167, 26);
             this.comboBox1.TabIndex = 5;
+            this.comboBox1.TextChanged += new System.EventHandler(this.comboBox1_TextChanged);
             // 
             // button9
             // 
